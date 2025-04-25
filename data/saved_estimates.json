@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "category": "Laminate",
+      "brand": "QuickFloor",
+      "name": "Oak Brown",
+      "quantity": 250.0
+    },
+    {
+      "category": "Hardwood",
+      "brand": "NatureWood",
+      "name": "Maple Premium",
+      "quantity": 120.0
+    }
+  ]
+}
+

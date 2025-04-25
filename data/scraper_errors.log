@@ -1,0 +1,695 @@
+2025-04-23 14:10:52,513 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/carpet
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/carpet
+2025-04-23 14:10:53,864 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:54,213 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/hardwood
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/hardwood
+2025-04-23 14:10:54,306 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:54,581 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/laminate
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/laminate
+2025-04-23 14:10:54,650 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:54,822 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/tile
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/tile
+2025-04-23 14:10:54,886 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:55,184 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/luxury-vinyl
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/luxury-vinyl
+2025-04-23 14:10:55,260 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:55,728 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/waterproof
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/waterproof
+2025-04-23 14:10:55,805 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:56,417 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/vinyl
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/vinyl
+2025-04-23 14:10:56,499 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:56,832 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/glass-tile
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/glass-tile
+2025-04-23 14:10:56,900 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:10:57,185 [ERROR] Listing page scrape failed for https://www.flooringsuperstorescalgary.ca/shop/cork
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 67, in scrape_listing_page
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/shop/cork
+2025-04-23 14:10:57,261 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:34,564 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:37,043 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:38,107 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:39,377 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:40,895 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:42,072 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:43,440 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:44,311 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:14:45,296 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 55, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:17:23,345 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:17:28,829 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:17:35,294 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:17:40,659 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:17:47,016 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:17:52,382 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:17:58,775 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:18:04,187 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:18:09,581 [ERROR] Sitemap fetch failed for https://www.flooringsuperstorescalgary.ca/sitemap_products_1.xml
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 72, in fetch_sitemap_urls
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:20:39,089 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=carpet&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 63, in fetch_fss_category_products
+    resp.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.flooringsuperstorescalgary.ca/404
+2025-04-23 14:20:39,281 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=hardwood&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 14:20:39,381 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=laminate&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 14:20:39,485 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=tile&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 14:20:39,585 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=luxury-vinyl&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 14:20:39,735 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=waterproof&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 14:20:39,857 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=vinyl&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 14:20:40,402 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=glass-tile&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 14:20:40,500 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=cork&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:35:03,791 ERROR Failed to fetch products
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 141, in main
+    items = fetch_all_products()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 113, in fetch_all_products
+    "image": v.get("image", {}).get("url"),
+             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get'
+2025-04-23 15:37:29,595 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=carpet&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:29,794 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=hardwood&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:29,897 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=laminate&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:29,998 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=tile&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:30,094 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=luxury-vinyl&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:30,192 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=waterproof&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:30,289 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=vinyl&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:32,426 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=glass-tile&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2025-04-23 15:37:32,526 [ERROR] FSS API fetch failed for https://www.flooringsuperstorescalgary.ca/api/catalog/products?category=cork&page=1&limit=1000
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jeffv\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\scraper.py", line 64, in fetch_fss_category_products
+    data = resp.json()
+  File "C:\Users\jeffv\Desktop\Coding Projects\estimating-python\env\Lib\site-packages\requests\models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)

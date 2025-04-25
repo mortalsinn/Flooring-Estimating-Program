@@ -1,0 +1,20 @@
+[
+  {
+    "category": "Laminate",
+    "brand": "QuickFloor",
+    "name": "Oak Brown",
+    "price": 1.99,
+    "image": "",
+    "specs": "Laminate AC3, 8mm thickness",
+    "margin": 0
+  },
+  {
+    "category": "Hardwood",
+    "brand": "NatureWood",
+    "name": "Maple Premium",
+    "price": 5.49,
+    "image": "",
+    "specs": "Solid wood, 3/4 inch thickness"
+    // "margin": 0  (margin omitted here would default to 0 in the app)
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "category": "Laminate",
+    "brand": "CustomBrand",
+    "name": "My Custom Floor",
+    "price": 2.75,
+    "image": "http://example.com/image.jpg",
+    "specs": "12mm thickness, AC4 rating",
+    "margin": 15
+  }
+]
