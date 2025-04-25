@@ -1,35 +1,12 @@
 # main.py — Flooring Estimator v1.15.1
-# main.py — Flooring Estimator v1.15.1
-"""
-FEATURE CHECKLIST
-────────────────────────
-[Estimate Tab]
-  • Browse by Category → Product → Area → +Add – calculates Subtotal, GST, Total
-  • “Customer Copy” preview & print
 
-[Admin Tab]
-  • View default + custom products
-  • Add / Update / Delete (password-protected)
-
-[Room Designer]
-  • Upload Photo background
-  • Draw Line  → real-time measurement annotation
-  • Draw Rectangle → width/height annotation
-  • Draw Brush → freehand sketch starting exactly at click
-  • Ruler Overlay → non-destructive, toggle on/off
-  • Clear Canvas → removes all drawing but leaves photo
-
-All other tabs/functions remain untouched.
-"""
 import sys, os
 
 from PySide6.QtWidgets import (
-    QApplication, QMainWindow, QTabWidget, QHBoxLayout,
-    QPushButton, QWidget, QVBoxLayout, QSplitter, QLabel,
-    QToolBar, QComboBox, QDoubleSpinBox
+    QApplication, QMainWindow, QWidget, QTabWidget, QVBoxLayout, QHBoxLayout,
+    QToolBar, QLabel, QComboBox, QDoubleSpinBox, QPushButton,
     QTableWidget, QTableWidgetItem, QHeaderView,
-    QLineEdit, QInputDialog, QMessageBox, QFrame,
-    QDialog, QTextEdit, QAbstractItemView
+    QLineEdit, QInputDialog, QMessageBox, QFrame, QDialog, QTextEdit
 )
 from PySide6.QtGui import QAction, QActionGroup, QPixmap, QFont, QPalette, QColor
 from PySide6.QtCore import Qt
@@ -47,8 +24,8 @@ class StyledApp(QApplication):
         self.setStyle('Fusion')
         p = QPalette()
         p.setColor(QPalette.Window, QColor('#E3F2FD'))
-        p.setColor(QPalette.Base, QColor('#FFFFFF'))
-        p.setColor(QPalette.Text, QColor('#333333'))
+        p.setColor(QPalette.Base,   QColor('#FFFFFF'))
+        p.setColor(QPalette.Text,   QColor('#333333'))
         p.setColor(QPalette.Button, QColor('#2196F3'))
         p.setColor(QPalette.ButtonText, QColor('#FFFFFF'))
         p.setColor(QPalette.Highlight, QColor('#64B5F6'))
@@ -118,13 +95,15 @@ class EstimateTab(QWidget):
     def _refresh(self):
         self.table.setRowCount(len(self.items))
         subtotal = 0.0
-        for i,it in enumerate(self.items):
+        for i, it in enumerate(self.items):
             p, q = it['prod'], it['qty']
             u, lt = p['price'], p['price']*q
             subtotal += lt
-            for col, txt in enumerate((p['name'], f"${u:.2f}", f"{q:.2f}", f"${lt:.2f}")):
-                self.table.setItem(i, col, QTableWidgetItem(txt))
-        gst = subtotal * 0.05
+            self.table.setItem(i,0,QTableWidgetItem(p['name']))
+            self.table.setItem(i,1,QTableWidgetItem(f"${u:.2f}"))
+            self.table.setItem(i,2,QTableWidgetItem(f"{q:.2f}"))
+            self.table.setItem(i,3,QTableWidgetItem(f"${lt:.2f}"))
+        gst = subtotal*0.05
         self.sub.setText(f"Subtotal: ${subtotal:.2f}")
         self.gst.setText(f"GST (5%): ${gst:.2f}")
         self.total.setText(f"<b>Total: ${(subtotal+gst):.2f}</b>")
@@ -137,49 +116,49 @@ class CustomerCopy(QDialog):
         self.resize(600,500)
         L = QVBoxLayout(self)
 
+        # Header
         hb = QHBoxLayout()
         logo = QLabel()
         lp = os.path.join(os.path.dirname(__file__),'assets','logo.png')
         if os.path.exists(lp):
-            logo.setPixmap(
-                QPixmap(lp)
-                .scaled(80,80, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-            )
+            logo.setPixmap(QPixmap(lp).scaled(80,80,Qt.KeepAspectRatio,Qt.SmoothTransformation))
         hb.addWidget(logo)
         hb.addWidget(QLabel("<h2>Estimate</h2>"))
         hb.addStretch()
         L.addLayout(hb)
         L.addWidget(self._sep())
 
+        # Table
         tbl = QTableWidget(len(lines),4)
         tbl.setHorizontalHeaderLabels(["Item","Qty","Unit","Line Total"])
         tbl.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
-        total = 0
+        total=0
         for r,l in enumerate(lines):
             p, q = l['prod'], l['qty']
             u, lt = p['price'], p['price']*q
-            total += lt
-            for c,v in enumerate((p['name'], f"{q:.2f}", f"${u:.2f}", f"${lt:.2f}")):
-                tbl.setItem(r, c, QTableWidgetItem(v))
+            total+=lt
+            for c,v in enumerate((p['name'],f"{q:.2f}",f"${u:.2f}",f"${lt:.2f}")):
+                tbl.setItem(r,c,QTableWidgetItem(v))
         L.addWidget(tbl)
         L.addWidget(self._sep())
 
-        gst = total * 0.05
+        # Footer
+        gst = total*0.05
         ft = QTextEdit(); ft.setReadOnly(True)
         ft.setHtml(
             f"<b>Subtotal:</b> ${total:.2f}<br>"
             f"<b>GST (5%):</b> ${gst:.2f}<br>"
-            f"<h2>Total:</h2> <h3>${(total+gst):.2f}</h3>"
+            f"<h3>Total:</h3> <h2>${(total+gst):.2f}</h2>"
         )
         L.addWidget(ft)
         btn = QPushButton("Print")
         from PySide6.QtPrintSupport import QPrinter, QPrintDialog
-        btn.clicked.connect(lambda: QPrintDialog(QPrinter(), self).print_())
+        btn.clicked.connect(lambda: QPrintDialog(QPrinter(),self).print_())
         L.addWidget(btn, alignment=Qt.AlignRight)
 
     def _sep(self):
-        f = QFrame(); f.setFrameShape(QFrame.HLine); f.setFrameShadow(QFrame.Sunken)
-        return f
+        s = QFrame(); s.setFrameShape(QFrame.HLine); s.setFrameShadow(QFrame.Sunken)
+        return s
 
 
 # ───────────────── Admin Tab ────────────────────────────────────────────────
@@ -196,7 +175,6 @@ class AdminTab(QWidget):
         L = QVBoxLayout(self)
         self.table = QTableWidget(0,5)
         self.table.setHorizontalHeaderLabels(["Category","Brand","Name","Price","Margin%"])
-        # fix: use QAbstractItemView.NoEditTriggers
         self.table.setEditTriggers(QAbstractItemView.NoEditTriggers)
         L.addWidget(self.table)
 
@@ -207,21 +185,19 @@ class AdminTab(QWidget):
             ("Price:",    QDoubleSpinBox()),
             ("Margin:",   QDoubleSpinBox()),
         ]:
-            row = QHBoxLayout()
-            row.addWidget(QLabel(label))
-            if isinstance(widget, QDoubleSpinBox):
+            row=QHBoxLayout(); row.addWidget(QLabel(label))
+            if isinstance(widget,QDoubleSpinBox):
                 widget.setRange(0,1e6)
                 widget.setPrefix("$" if label=="Price:" else "")
-                widget.setSuffix("" if label=="Price:" else " %")
-            setattr(self, label[:-1].lower().replace(" ","_") + "_in", widget)
-            row.addWidget(widget)
-            L.addLayout(row)
+                widget.setSuffix(""  if label=="Price:" else " %")
+            setattr(self,label[:-1].lower().replace(" ","_")+"_in", widget)
+            row.addWidget(widget); L.addLayout(row)
 
         btns = QHBoxLayout()
-        self.new  = QPushButton("New");    btns.addWidget(self.new)
-        self.add  = QPushButton("Add");    btns.addWidget(self.add)
-        self.upd  = QPushButton("Update"); btns.addWidget(self.upd)
-        self.del_ = QPushButton("Delete"); btns.addWidget(self.del_)
+        self.new=QPushButton("New"); btns.addWidget(self.new)
+        self.add=QPushButton("Add"); btns.addWidget(self.add)
+        self.upd=QPushButton("Update"); btns.addWidget(self.upd)
+        self.del_=QPushButton("Delete");btns.addWidget(self.del_)
         L.addLayout(btns)
 
     def _wire(self):
@@ -232,40 +208,33 @@ class AdminTab(QWidget):
         self.del_.clicked.connect(self._delete)
 
     def _refresh_table(self):
-        combined = []
-        ukeys = {(p['category'],p['brand'],p['name']) for p in self.user}
+        combined=[]; ukeys={(p['category'],p['brand'],p['name']) for p in self.user}
         for p in self.default:
             if (p['category'],p['brand'],p['name']) not in ukeys:
                 combined.append((p,'default'))
-        for p in self.user:
-            combined.append((p,'user'))
-        self.combined = combined
-        self.table.setRowCount(len(combined))
+        for p in self.user: combined.append((p,'user'))
+        self.combined=combined; self.table.setRowCount(len(combined))
         for i,(p,src) in enumerate(combined):
-            vals = [
-                p['category'], p['brand'], p['name'],
-                f"${p['price']:.2f}", f"{p.get('margin',0):.0f}%"
-            ]
+            vals=[p['category'],p['brand'],p['name'],
+                  f"${p['price']:.2f}",f"{p.get('margin',0):.0f}%"]
             for j,v in enumerate(vals):
-                self.table.setItem(i, j, QTableWidgetItem(v))
+                self.table.setItem(i,j,QTableWidgetItem(v))
         self._clear()
 
-    def _on_sel(self, r, _):
-        p,src = self.combined[r]
-        self.sel = r
-        self.category_in.setText(p['category'])
-        self.brand_in   .setText(p['brand'])
-        self.name_in    .setText(p['name'])
-        self.price_in   .setValue(p['price'])
-        self.margin_in  .setValue(p.get('margin',0))
+    def _on_sel(self,r,_):
+        p,src=self.combined[r]; self.sel=r
+        for fld in ('category','brand','name'):
+            getattr(self,fld+'_in').setText(p[fld])
+        self.price_in .setValue(p['price'])
+        self.margin_in.setValue(p.get('margin',0))
         self.add .setEnabled(False)
         self.upd .setEnabled(True)
         self.del_.setEnabled(True)
 
     def _clear(self):
-        self.sel = None
+        self.sel=None
         for fld in ('category','brand','name'):
-            getattr(self, fld+"_in").clear()
+            getattr(self,fld+'_in').clear()
         self.price_in .setValue(0)
         self.margin_in.setValue(0)
         self.add .setEnabled(True)
@@ -274,51 +243,44 @@ class AdminTab(QWidget):
         self.table.clearSelection()
 
     def _add(self):
-        cat = self.category_in.text().strip()
-        br  = self.brand_in.  text().strip()
-        nm  = self.name_in.   text().strip()
-        pr  = self.price_in.  value()
-        mg  = self.margin_in. value()
+        cat,br,nm = self.category_in.text().strip(),self.brand_in.text().strip(),self.name_in.text().strip()
+        pr, mg    = self.price_in.value(), self.margin_in.value()
         if not(cat and br and nm and pr>0):
-            QMessageBox.warning(self,"Error","All fields & Price>0 required")
-            return
-        for p in self.default + self.user:
-            if (p['category'],p['brand'],p['name']) == (cat,br,nm):
+            QMessageBox.warning(self,"Error","All fields & Price>0 required"); return
+        for p in (self.default+self.user):
+            if (p['category'],p['brand'],p['name'])==(cat,br,nm):
                 QMessageBox.warning(self,"Error","Duplicate"); return
-        new = {"category":cat,"brand":br,"name":nm,"price":pr,"margin":mg}
-        self.user.append(new)
+        self.user.append({"category":cat,"brand":br,"name":nm,"price":pr,"margin":mg})
         utils.save_user_products(self.user)
         self._refresh_table()
 
     def _update(self):
         if self.sel is None: return
-        p,src = self.combined[self.sel]
+        p,src=self.combined[self.sel]
         if src=='default':
-            self.default = [x for x in self.default
-                            if (x['category'],x['brand'],x['name']) != (p['category'],p['brand'],p['name'])]
+            self.default=[x for x in self.default
+                          if (x['category'],x['brand'],x['name'])!=(p['category'],p['brand'],p['name'])]
         else:
-            self.user    = [x for x in self.user
-                            if (x['category'],x['brand'],x['name']) != (p['category'],p['brand'],p['name'])]
-        upd = {
-            "category": self.category_in.text().strip(),
-            "brand":    self.brand_in.  text().strip(),
-            "name":     self.name_in.   text().strip(),
-            "price":    self.price_in.  value(),
-            "margin":   self.margin_in. value()
-        }
+            self.user=[x for x in self.user
+                       if (x['category'],x['brand'],x['name'])!=(p['category'],p['brand'],p['name'])]
+        upd={"category":self.category_in.text().strip(),
+             "brand":   self.brand_in.text().strip(),
+             "name":    self.name_in.text().strip(),
+             "price":   self.price_in.value(),
+             "margin":  self.margin_in.value()}
         self.user.append(upd)
         utils.save_user_products(self.user)
         self._refresh_table()
 
     def _delete(self):
         if self.sel is None: return
-        p,src = self.combined[self.sel]
+        p,src=self.combined[self.sel]
         if src=='default':
-            self.default = [x for x in self.default
-                            if (x['category'],x['brand'],x['name']) != (p['category'],p['brand'],p['name'])]
+            self.default=[x for x in self.default
+                          if (x['category'],x['brand'],x['name'])!=(p['category'],p['brand'],p['name'])]
         else:
-            self.user = [x for x in self.user
-                         if (x['category'],x['brand'],x['name']) != (p['category'],p['brand'],p['name'])]
+            self.user=[x for x in self.user
+                       if (x['category'],x['brand'],x['name'])!=(p['category'],p['brand'],p['name'])]
             utils.save_user_products(self.user)
         self._refresh_table()
 
@@ -337,68 +299,50 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(tabs)
 
         self.est   = EstimateTab(default)
-        self.room  = self._room_designer_tab()
+        self.room  = self._make_room_designer()
         self.admin = AdminTab(default,user)
 
-        tabs.addTab(self.est,   "Estimate")
-        tabs.addTab(self.room,  "Room Designer")
-        tabs.addTab(self.admin, "Admin")
+        tabs.addTab(self.est,  "Estimate")
+        tabs.addTab(self.room, "Room Designer")
+        tabs.addTab(self.admin,"Admin")
         tabs.currentChanged.connect(self._on_tab)
 
-# inside main.py — in MainWindow:
-
-    def _room_designer_tab(self):
-        from PySide6.QtWidgets import (
-            QWidget, QVBoxLayout, QHBoxLayout, QSplitter,
-            QLabel, QToolBar, QAction, QComboBox, QDoubleSpinBox
-        )
-
+    def _make_room_designer(self):
+        from PySide6.QtWidgets import QVBoxLayout
         w = QWidget()
         L = QVBoxLayout(w)
 
-        # — toolbar
         tb     = QToolBar()
-        upload = QAction("Upload Photo…", self)
-        wall   = QAction("Walls",        self); wall.setCheckable(True)
-        clear  = QAction("Clear",        self)
-        pick   = QAction("Pick Color",   self)
-        tb.addAction(upload)
-        tb.addAction(wall)
-        tb.addAction(clear)
-        tb.addAction(pick)
-        L.addWidget(tb)
-
-        # — canvas + stats side by side
-        from drawing_canvas import DrawingCanvas
         canvas = DrawingCanvas()
-        stats_w = QWidget()
-        stats_l = QVBoxLayout(stats_w)
-        area_lbl      = QLabel("Area: 0")
-        perimeter_lbl = QLabel("Perimeter: 0")
-        stats_l.addWidget(area_lbl)
-        stats_l.addWidget(perimeter_lbl)
-        stats_l.addStretch()
 
-        splitter = QSplitter(Qt.Horizontal)
-        splitter.addWidget(canvas)
-        splitter.addWidget(stats_w)
-        splitter.setStretchFactor(0,3)
-        splitter.setStretchFactor(1,1)
-        L.addWidget(splitter)
+        # actions
+        upload = QAction("Upload Photo…", self)
+        line   = QAction("Line",       self); line.setCheckable(True)
+        curve  = QAction("Curve",      self); curve.setCheckable(True)
+        clear  = QAction("Clear",      self)
+        pick   = QAction("Pick Color", self)
 
-        # — hook up actions
+        ag = QActionGroup(self); ag.setExclusive(True)
+        for a in (line, curve):
+            ag.addAction(a)
+
+        for a in (upload, line, curve, clear, pick):
+            tb.addAction(a)
+        tb.addSeparator()
+        units = QComboBox(); units.addItems(['px/unit','in','ft','cm','m']); tb.addWidget(QLabel("Scale:")); tb.addWidget(units)
+        scale = QDoubleSpinBox(); scale.setRange(0.01,10000); scale.setValue(1.0); tb.addWidget(scale)
+
+        L.addWidget(tb)
+        L.addWidget(canvas)
+
+        # wire
         upload.triggered.connect(canvas.upload_photo)
         clear .triggered.connect(canvas.clear)
         pick  .triggered.connect(canvas.pick_color)
-        wall  .toggled.connect(lambda on: canvas.set_tool('wall' if on else None))
-
-        # — update stats when a polygon completes
-        canvas.polyCompleted.connect(
-            lambda a,p: (
-                area_lbl.setText(f"Area: {a:.1f}"),
-                perimeter_lbl.setText(f"Perimeter: {p:.1f}")
-            )
-        )
+        line  .toggled.connect(lambda on: canvas.set_tool('line'  if on else None))
+        curve .toggled.connect(lambda on: canvas.set_tool('curve' if on else None))
+        units.currentTextChanged.connect(canvas.set_unit_type)
+        scale.valueChanged.connect(canvas.set_scale)
 
         return w
 
@@ -412,8 +356,7 @@ class MainWindow(QMainWindow):
                 QMessageBox.warning(self,"Admin","Invalid credentials")
                 self.centralWidget().setCurrentIndex(0)
 
-
-if __name__=='__main__':
+if __name__ == '__main__':
     app = StyledApp(sys.argv)
     w   = MainWindow()
     w.show()
